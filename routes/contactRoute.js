@@ -5,9 +5,9 @@ const EMAIL_TEMPLATE_CONTACT = require("../utils/emailTemplate");
 
 router.post("/", async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { name, email, phone, message } = req.body;
 
-    if (!name || !email || !message) {
+    if (!name || !email || !phone || !message) {
       return res.status(400).json({
         success: false,
         message: "All fields required",
@@ -17,6 +17,7 @@ router.post("/", async (req, res) => {
     const finalHtml = EMAIL_TEMPLATE_CONTACT
       .replace(/{{name}}/g, name)
       .replace(/{{email}}/g, email)
+      .replace(/{{phone}}/g, phone)
       .replace(/{{message}}/g, message);
 
     await axios.post(

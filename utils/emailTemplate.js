@@ -30,7 +30,8 @@ const EMAIL_TEMPLATE_CONTACT = `
             <hr>
 
             <p><strong>Name:</strong> {{name}}</p>
-            <p><strong>Email:</strong> {{email}}</p>            
+            <p><strong>Email:</strong> {{email}}</p> 
+            <p><strong>Phone:</strong> {{phone}}</p>           
             <p><strong>Message:</strong> {{message}}</p>
             
 
