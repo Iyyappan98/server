@@ -6,6 +6,7 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
+  "https://umatailoring.vercel.app"
   // "https://umacabiyyappan.vercel.app",
   // "https://umacab.com",
   // "https://www.umacab.com"
