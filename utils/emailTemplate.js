@@ -10,10 +10,9 @@ const EMAIL_TEMPLATE_CONTACT = `
           <td align="left" background="https://tlr.stripocdn.email/content/guids/CABINET_0fa486e736790bd0e3fdb2f0eb814a76/images/hectorjrivas1fxmet2u5duunsplash_1.png"
               style="background-size:cover;background-position:center;padding:40px;">
 
-            <a href="https://www.umacab.com/" target="_blank">
-              <img src="https://demo.stripocdn.email/content/guids/ba0f783d-885e-4e8c-9e6c-9137bed50275/images/logo.png"
-                   height="60" style="display:block;">
-            </a>
+            <a href="https://www.umatailoring.com/" target="_blank">
+                    <img height="60" src="https://fyuauea.stripocdn.email/content/guids/CABINET_90e7d85d6cc2ae6bdf1e75505d458e4612f3b64186f5eee6032cccef46452358/images/umatailoringlogo.png" style="display: block">
+                  </a>
 
           </td>
         </tr>
@@ -29,18 +28,18 @@ const EMAIL_TEMPLATE_CONTACT = `
 
             <hr>
 
-            <p><strong>Name:</strong> {{name}}</p>
-            <p><strong>Email:</strong> {{email}}</p> 
-            <p><strong>Phone:</strong> {{phone}}</p>           
+            <p><strong>Name:</strong> {{name}}</p>            
+            <p><strong>Phone:</strong> {{phone}}</p>
+            <p><strong>Service:</strong> {{service}}</p>            
             <p><strong>Message:</strong> {{message}}</p>
             
 
             <hr>
 
-            <p>Please contact the student as soon as possible.</p>
+            <p>Please contact the customer as soon as possible.</p>
 
             <p style="font-size:12px;color:#999;">
-              This is an automated email from UmaCab Website.
+              This is an automated email from Uma-tailoring Website.
             </p>
 
           </td>
@@ -52,18 +51,18 @@ const EMAIL_TEMPLATE_CONTACT = `
               style="background-size:cover;background-position:center;padding:30px;color:#ffffff;">
 
             <p style="margin:0;font-size:14px;">
-              <strong>Umacabs</strong><br>
-              Reliable & Comfortable Taxi Services Across the City
+              <strong>Uma-tailoring</strong><br>
+              Specialists in Aari Work, Bridal Blouses & Designer Suits
             </p>
 
             <p style="margin:10px 0 0 0;font-size:13px;">
-              Email: vijayshankar2668@gmail.com<br>
-              Phone: +91-9655373788<br>
-              Website: https://www.umacab.com/
+              Email: rgviyer@gmail.com<br>
+              Phone: +91-9445535457 || +91-8848507556<br>
+              Website: https://www.umatailoring.com/
             </p>
 
             <p style="margin-top:10px;font-size:12px;">
-              © 2026 Umacabs. All Rights Reserved.
+              © 2026 Uma-tailoring. All Rights Reserved.
             </p>
 
           </td>

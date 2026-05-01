@@ -5,9 +5,9 @@ const EMAIL_TEMPLATE_CONTACT = require("../utils/emailTemplate");
 
 router.post("/", async (req, res) => {
   try {
-    const { name, email, phone, message } = req.body;
+    const { name, phone, service, message } = req.body;
 
-    if (!name || !email || !phone || !message) {
+    if (!name || !phone || !service || !message) {
       return res.status(400).json({
         success: false,
         message: "All fields required",
@@ -16,15 +16,15 @@ router.post("/", async (req, res) => {
 
     const finalHtml = EMAIL_TEMPLATE_CONTACT
       .replace(/{{name}}/g, name)
-      .replace(/{{email}}/g, email)
-      .replace(/{{phone}}/g, phone)
+      .replace(/{{phone}}/g, email)
+      .replace(/{{service}}/g, phone)
       .replace(/{{message}}/g, message);
 
     await axios.post(
       "https://api.brevo.com/v3/smtp/email",
       {
         sender: {
-          name: "Uma Cab Contact",
+          name: "Uma Tailoring Contact",
           email: process.env.SENDER_EMAIL,
         },
         to: [
@@ -33,10 +33,10 @@ router.post("/", async (req, res) => {
           },
         ],
         replyTo: {
-          email: email,
+          email: process.env.ADMIN_EMAIL,
           name: name,
         },
-        subject: `New Enquiry Contact - ${name}`,
+        subject: `New Enquiry - ${name} | ${service}`,
         htmlContent: finalHtml,
       },
       {

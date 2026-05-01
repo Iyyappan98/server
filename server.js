@@ -6,9 +6,9 @@ const app = express();
 
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://umacabiyyappan.vercel.app",
-  "https://umacab.com",
-  "https://www.umacab.com"
+  // "https://umacabiyyappan.vercel.app",
+  // "https://umacab.com",
+  // "https://www.umacab.com"
 ];
 
 app.use(cors({
